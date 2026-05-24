@@ -53,14 +53,6 @@ struct MarketListView<ViewModel: MarketListViewModelProtocol, DetailView: View>:
         }
     }
 
-    private func handleRefreshLifecycle() {
-        if shouldAutoRefresh {
-            viewModel.startAutoRefresh()
-        } else {
-            viewModel.stopAutoRefresh()
-        }
-    }
-
     // MARK: - Auto-refresh Lifecycle
     //
     // The market list should refresh only when it is actively visible to the user.
@@ -101,6 +93,14 @@ struct MarketListView<ViewModel: MarketListViewModelProtocol, DetailView: View>:
     // This avoids unnecessary API requests while the list is not visible and protects
     // the limited RapidAPI quota. The ViewModel also guards against duplicate refresh
     // tasks, so calling startAutoRefresh() multiple times is safe.
+    private func handleRefreshLifecycle() {
+        if shouldAutoRefresh {
+            viewModel.startAutoRefresh()
+        } else {
+            viewModel.stopAutoRefresh()
+        }
+    }
+    
     private var shouldAutoRefresh: Bool {
         scenePhase == .active && navigationPath.isEmpty
     }

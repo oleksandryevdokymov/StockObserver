@@ -19,6 +19,7 @@ enum APIError: Error {
     case unexpectedStatusCode(Int)
     case decoding(Error)
     case transport(Error)
+    case cancelled
 }
 
 extension APIError: LocalizedError {
@@ -46,6 +47,8 @@ extension APIError: LocalizedError {
             return "Failed to decode response: \(error.localizedDescription)"
         case .transport(let error):
             return "Network error: \(error.localizedDescription)"
+        case .cancelled:
+            return "Request was cancelled."
         }
     }
 }

@@ -115,6 +115,12 @@ final class MarketListViewModel: MarketListViewModelProtocol {
             items = fetchedItems
             lastUpdated = Date()
             errorMessage = nil
+        } catch APIError.cancelled {
+            // Ignore cancellation.
+            // This can happen when auto-refresh is stopped because the user navigates
+            // to the detail screen or the app moves to the background.
+        } catch is CancellationError {
+            // Ignore task cancellation.
         } catch {
             if items.isEmpty || !isBackgroundRefresh {
                 errorMessage = error.localizedDescription

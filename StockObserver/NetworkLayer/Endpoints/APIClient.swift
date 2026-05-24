@@ -37,7 +37,14 @@ final class URLSessionAPIClient: APIClient {
 
         do {
             (data, response) = try await session.data(for: request)
+        } catch is CancellationError {
+            throw APIError.cancelled
         } catch {
+            if let urlError = error as? URLError,
+               urlError.code == .cancelled {
+                throw APIError.cancelled
+            }
+
             throw APIError.transport(error)
         }
 
