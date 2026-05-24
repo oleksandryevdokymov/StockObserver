@@ -32,7 +32,7 @@ Setup:
 
 ## API Note
 
-The task specification using:
+The current specification using:
 
 - `market/v2/get-summary` for the list screen
 - `stock/v2/get-summary` for the detail screen
