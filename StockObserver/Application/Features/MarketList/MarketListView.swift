@@ -7,18 +7,18 @@
 
 import SwiftUI
 
-struct MarketListView<ViewModel: MarketListViewModelProtocol>: View {
+struct MarketListView<ViewModel: MarketListViewModelProtocol, DetailView: View>: View {
     
     @StateObject private var viewModel: ViewModel
 
-    private let makeDetailViewModel: (MarketItem) -> StockDetailViewModel
-
+    private let makeDetailView: (MarketItem) -> DetailView
+    
     init(viewModel: ViewModel,
-        makeDetailViewModel: @escaping (MarketItem) -> StockDetailViewModel) {
+        @ViewBuilder makeDetailView: @escaping (MarketItem) -> DetailView) {
         _viewModel = StateObject(wrappedValue: viewModel)
-        self.makeDetailViewModel = makeDetailViewModel
+        self.makeDetailView = makeDetailView
     }
-
+    
     var body: some View {
         NavigationStack {
             content
@@ -34,7 +34,7 @@ struct MarketListView<ViewModel: MarketListViewModelProtocol>: View {
                     }
                 }
                 .navigationDestination(for: MarketItem.self) { item in
-                    StockDetailView(viewModel: makeDetailViewModel(item))
+                    makeDetailView(item)
                 }
         }
         .task {

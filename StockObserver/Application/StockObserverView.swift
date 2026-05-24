@@ -20,11 +20,10 @@ struct StockObserverView: View {
     }
 
     var body: some View {
-        MarketListView(
-            viewModel: viewModel,
-            makeDetailViewModel: { item in
-                dependencyContainer.makeStockDetailViewModel(for: item)
-            }
-        )
+        MarketListView(viewModel: viewModel) { item in
+            StockDetailView(
+                viewModel: dependencyContainer.makeStockDetailViewModel(for: item)
+            )
+        }
     }
 }
