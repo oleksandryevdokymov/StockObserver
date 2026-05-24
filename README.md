@@ -8,7 +8,7 @@ SwiftUI and MVVM-based iOS application for viewing Yahoo Finance data through Ra
 - Stock/detail screen
 - Search by name or symbol
 - Auto-refresh every 8 seconds
-- SwiftUI + MVVM
+- SwiftUI + MVVM, Errors handling
 - Swift Structured Concurrency
 - Protocol-based services
 - DTO to domain mapping
@@ -48,5 +48,6 @@ The app still calls the required endpoint. If the response is empty, the detail 
 <img width="660" height="1434" alt="IMG_2973" src="https://github.com/user-attachments/assets/81ecd3ab-9890-4ee3-b1ba-47d17c2a120d" />
 <img width="660" height="1434" alt="IMG_2974" src="https://github.com/user-attachments/assets/4c19ffd6-2172-4112-928a-96979c16b7fd" />
 <img width="660" height="1434" alt="IMG_2975" src="https://github.com/user-attachments/assets/fd599617-a65e-4b23-8bff-3ed07f3692fe" />
+<img width="660" height="1434" alt="IMG_2977" src="https://github.com/user-attachments/assets/1acc8f11-c3b0-45cc-a168-9e76ecee35ed" />
 
 
