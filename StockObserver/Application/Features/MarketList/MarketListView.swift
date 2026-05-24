@@ -110,20 +110,16 @@ struct MarketListView<ViewModel: MarketListViewModelProtocol, DetailView: View>:
         if viewModel.isLoading {
             LoadingView(title: "Loading market data...")
         } else if let errorMessage = viewModel.errorMessage {
-            ErrorStateView(
-                title: "Unable to Load Market Data",
-                message: errorMessage,
-                retryAction: {
-                    Task {
-                        await viewModel.refresh()
-                    }
+            ErrorStateView(title: "Unable to Load Market Data",
+                           message: errorMessage,
+                           retryAction: {
+                Task {
+                    await viewModel.refresh()
                 }
-            )
+            })
         } else if viewModel.shouldShowEmptyState {
-            EmptyStateView(
-                title: "No Results",
-                message: "Try searching for another stock or market symbol."
-            )
+            EmptyStateView(title: "No Results",
+                           message: "Try searching for another stock or market symbol.")
         } else {
             List {
                 if let lastUpdated = viewModel.lastUpdated {

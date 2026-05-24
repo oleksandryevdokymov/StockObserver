@@ -9,10 +9,7 @@ import Foundation
 
 extension Double {
     func decimalText(maxFractionDigits: Int = 2) -> String {
-        formatted(
-            .number
-                .precision(.fractionLength(0...maxFractionDigits))
-        )
+        formatted(.number.precision(.fractionLength(0...maxFractionDigits)))
     }
 
     func signedDecimalText(maxFractionDigits: Int = 2) -> String {

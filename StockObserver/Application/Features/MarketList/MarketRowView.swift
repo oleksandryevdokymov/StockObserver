@@ -42,10 +42,8 @@ struct MarketRowView: View {
             }
 
             if item.sparkCloseValues.count > 1 {
-                SparklineView(
-                    values: item.sparkCloseValues,
-                    lineColor: changeColor
-                )
+                SparklineView(values: item.sparkCloseValues,
+                    lineColor: changeColor)
                 .frame(height: 36)
             }
         }

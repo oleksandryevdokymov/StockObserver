@@ -40,21 +40,19 @@ struct StockDetail: Equatable {
 
 extension StockDetail {
     static func fallback(from item: MarketItem) -> StockDetail {
-        StockDetail(
-            symbol: item.symbol,
-            name: item.name,
-            price: item.price,
-            previousClose: item.previousClose,
-            exchange: item.exchange,
-            fullExchangeName: item.fullExchangeName,
-            quoteType: item.quoteType,
-            marketState: item.marketState,
-            region: item.region,
-            currency: nil,
-            lastMarketTime: item.lastMarketTime,
-            businessSummary: nil,
-            sparkCloseValues: item.sparkCloseValues,
-            source: .marketSummaryFallback
-        )
+        StockDetail(symbol: item.symbol,
+                    name: item.name,
+                    price: item.price,
+                    previousClose: item.previousClose,
+                    exchange: item.exchange,
+                    fullExchangeName: item.fullExchangeName,
+                    quoteType: item.quoteType,
+                    marketState: item.marketState,
+                    region: item.region,
+                    currency: nil,
+                    lastMarketTime: item.lastMarketTime,
+                    businessSummary: nil,
+                    sparkCloseValues: item.sparkCloseValues,
+                    source: .marketSummaryFallback)
     }
 }

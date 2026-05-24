@@ -29,11 +29,9 @@ final class StockDetailViewModel: StockDetailViewModelProtocol {
 
     private var didLoad = false
 
-    init(
-        marketItem: MarketItem,
-        marketService: MarketServiceProtocol,
-        region: MarketRegion = .us
-    ) {
+    init(marketItem: MarketItem,
+         marketService: MarketServiceProtocol,
+         region: MarketRegion = .us) {
         self.marketItem = marketItem
         self.marketService = marketService
         self.region = region
@@ -51,10 +49,8 @@ final class StockDetailViewModel: StockDetailViewModelProtocol {
         }
 
         do {
-            let response = try await marketService.fetchStockSummary(
-                symbol: marketItem.symbol,
-                region: region
-            )
+            let response = try await marketService.fetchStockSummary(symbol: marketItem.symbol,
+                                                                     region: region)
 
             detail = response.toDomain(fallback: marketItem)
             nonBlockingMessage = nil

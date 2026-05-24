@@ -13,9 +13,7 @@ struct SparklineView: View {
 
     var body: some View {
         GeometryReader { proxy in
-            let normalizedPoints = normalizedPoints(
-                in: proxy.size
-            )
+            let normalizedPoints = normalizedPoints(in: proxy.size)
 
             Path { path in
                 guard let firstPoint = normalizedPoints.first else { return }

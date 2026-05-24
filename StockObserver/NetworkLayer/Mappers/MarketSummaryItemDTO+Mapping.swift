@@ -25,21 +25,19 @@ extension MarketSummaryItemDTO {
             ?? fullExchangeName
             ?? symbol
 
-        return MarketItem(
-            id: symbol,
-            symbol: symbol,
-            name: name,
-            price: price,
-            formattedPrice: regularMarketPrice?.fmt,
-            previousClose: previousClose,
-            formattedPreviousClose: regularMarketPreviousClose?.fmt,
-            exchange: exchange,
-            fullExchangeName: fullExchangeName,
-            quoteType: quoteType,
-            marketState: marketState,
-            region: region,
-            lastMarketTime: regularMarketTime?.fmt,
-            sparkCloseValues: spark?.close?.compactMap { $0 } ?? []
-        )
+        return MarketItem(id: symbol,
+                          symbol: symbol,
+                          name: name,
+                          price: price,
+                          formattedPrice: regularMarketPrice?.fmt,
+                          previousClose: previousClose,
+                          formattedPreviousClose: regularMarketPreviousClose?.fmt,
+                          exchange: exchange,
+                          fullExchangeName: fullExchangeName,
+                          quoteType: quoteType,
+                          marketState: marketState,
+                          region: region,
+                          lastMarketTime: regularMarketTime?.fmt,
+                          sparkCloseValues: spark?.close?.compactMap { $0 } ?? [])
     }
 }

@@ -44,7 +44,6 @@ final class URLSessionAPIClient: APIClient {
                urlError.code == .cancelled {
                 throw APIError.cancelled
             }
-
             throw APIError.transport(error)
         }
 

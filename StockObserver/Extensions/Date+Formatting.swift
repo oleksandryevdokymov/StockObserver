@@ -9,11 +9,9 @@ import Foundation
 
 extension Date {
     var timeWithSecondsText: String {
-        formatted(
-            .dateTime
-                .hour()
-                .minute()
-                .second()
-        )
+        formatted(.dateTime
+            .hour()
+            .minute()
+            .second())
     }
 }

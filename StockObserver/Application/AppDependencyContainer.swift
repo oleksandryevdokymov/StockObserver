@@ -10,24 +10,18 @@ import Foundation
 final class AppDependencyContainer {
     private lazy var apiClient: APIClient = URLSessionAPIClient()
 
-    lazy var marketService: MarketServiceProtocol = YahooFinanceMarketService(
-        apiClient: apiClient
-    )
+    lazy var marketService: MarketServiceProtocol = YahooFinanceMarketService(apiClient: apiClient)
 
     @MainActor
     func makeMarketListViewModel() -> MarketListViewModel {
-        MarketListViewModel(
-            marketService: marketService,
-            region: .us
-        )
+        MarketListViewModel(marketService: marketService,
+                            region: .us)
     }
 
     @MainActor
     func makeStockDetailViewModel(for item: MarketItem) -> StockDetailViewModel {
-        StockDetailViewModel(
-            marketItem: item,
-            marketService: marketService,
-            region: .us
-        )
+        StockDetailViewModel(marketItem: item,
+                             marketService: marketService,
+                             region: .us)
     }
 }

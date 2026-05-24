@@ -41,10 +41,8 @@ struct StockDetailView<ViewModel: StockDetailViewModelProtocol>: View {
 
                 if detail.sparkCloseValues.count > 1 {
                     DetailCardView(title: "Price Movement") {
-                        SparklineView(
-                            values: detail.sparkCloseValues,
-                            lineColor: changeColor
-                        )
+                        SparklineView(values: detail.sparkCloseValues,
+                                      lineColor: changeColor)
                         .frame(height: 120)
                     }
                 }

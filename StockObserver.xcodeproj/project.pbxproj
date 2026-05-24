@@ -40,17 +40,17 @@
 		7F3BA9EF2FC24A8A0012DA5A /* ErrorStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3BA9EE2FC24A8A0012DA5A /* ErrorStateView.swift */; };
 		7F3BA9F12FC24AC80012DA5A /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3BA9F02FC24AC80012DA5A /* EmptyStateView.swift */; };
 		7F3BA9F32FC252C90012DA5A /* Date+Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3BA9F22FC252C90012DA5A /* Date+Formatting.swift */; };
+		7F3BAA0C2FC356490012DA5A /* MockMarketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3BAA0B2FC356490012DA5A /* MockMarketService.swift */; };
+		7F3BAA0E2FC356620012DA5A /* MockAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3BAA0D2FC356620012DA5A /* MockAPIClient.swift */; };
+		7F3BAA102FC356890012DA5A /* TestDataFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3BAA0F2FC356890012DA5A /* TestDataFactory.swift */; };
+		7F3BAA122FC356A70012DA5A /* MarketListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3BAA112FC356A70012DA5A /* MarketListViewModelTests.swift */; };
+		7F3BAA142FC356BC0012DA5A /* StockDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3BAA132FC356BC0012DA5A /* StockDetailViewModelTests.swift */; };
+		7F3BAA162FC356C70012DA5A /* YahooFinanceMarketServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3BAA152FC356C70012DA5A /* YahooFinanceMarketServiceTests.swift */; };
+		7F3BAA182FC356D20012DA5A /* MarketSummaryMappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3BAA172FC356D20012DA5A /* MarketSummaryMappingTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		7F3BA97D2FC218C50012DA5A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7F3BA9672FC218C40012DA5A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7F3BA96E2FC218C40012DA5A;
-			remoteInfo = StockObserver;
-		};
-		7F3BA9872FC218C50012DA5A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7F3BA9672FC218C40012DA5A /* Project object */;
 			proxyType = 1;
@@ -62,7 +62,6 @@
 /* Begin PBXFileReference section */
 		7F3BA96F2FC218C40012DA5A /* StockObserver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockObserver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F3BA97C2FC218C50012DA5A /* StockObserverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StockObserverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F3BA9862FC218C50012DA5A /* StockObserverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StockObserverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F3BA99F2FC219D30012DA5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F3BA9A02FC219D30012DA5A /* StockObserverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockObserverView.swift; sourceTree = "<group>"; };
 		7F3BA9A12FC219D30012DA5A /* StockObserverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockObserverApp.swift; sourceTree = "<group>"; };
@@ -97,20 +96,14 @@
 		7F3BA9EE2FC24A8A0012DA5A /* ErrorStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorStateView.swift; sourceTree = "<group>"; };
 		7F3BA9F02FC24AC80012DA5A /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		7F3BA9F22FC252C90012DA5A /* Date+Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatting.swift"; sourceTree = "<group>"; };
+		7F3BAA0B2FC356490012DA5A /* MockMarketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMarketService.swift; sourceTree = "<group>"; };
+		7F3BAA0D2FC356620012DA5A /* MockAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIClient.swift; sourceTree = "<group>"; };
+		7F3BAA0F2FC356890012DA5A /* TestDataFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDataFactory.swift; sourceTree = "<group>"; };
+		7F3BAA112FC356A70012DA5A /* MarketListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketListViewModelTests.swift; sourceTree = "<group>"; };
+		7F3BAA132FC356BC0012DA5A /* StockDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailViewModelTests.swift; sourceTree = "<group>"; };
+		7F3BAA152FC356C70012DA5A /* YahooFinanceMarketServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooFinanceMarketServiceTests.swift; sourceTree = "<group>"; };
+		7F3BAA172FC356D20012DA5A /* MarketSummaryMappingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketSummaryMappingTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		7F3BA97F2FC218C50012DA5A /* StockObserverTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = StockObserverTests;
-			sourceTree = "<group>";
-		};
-		7F3BA9892FC218C50012DA5A /* StockObserverUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = StockObserverUITests;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7F3BA96C2FC218C40012DA5A /* Frameworks */ = {
@@ -127,13 +120,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7F3BA9832FC218C50012DA5A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -141,8 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				7F3BA9A22FC219D30012DA5A /* StockObserver */,
-				7F3BA97F2FC218C50012DA5A /* StockObserverTests */,
-				7F3BA9892FC218C50012DA5A /* StockObserverUITests */,
+				7F3BAA072FC356090012DA5A /* StockObserverTests */,
 				7F3BA9702FC218C40012DA5A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -152,7 +137,6 @@
 			children = (
 				7F3BA96F2FC218C40012DA5A /* StockObserver.app */,
 				7F3BA97C2FC218C50012DA5A /* StockObserverTests.xctest */,
-				7F3BA9862FC218C50012DA5A /* StockObserverUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -318,6 +302,36 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		7F3BAA072FC356090012DA5A /* StockObserverTests */ = {
+			isa = PBXGroup;
+			children = (
+				7F3BAA0A2FC356320012DA5A /* TestData */,
+				7F3BAA092FC3562A0012DA5A /* Mocks */,
+				7F3BAA112FC356A70012DA5A /* MarketListViewModelTests.swift */,
+				7F3BAA132FC356BC0012DA5A /* StockDetailViewModelTests.swift */,
+				7F3BAA152FC356C70012DA5A /* YahooFinanceMarketServiceTests.swift */,
+				7F3BAA172FC356D20012DA5A /* MarketSummaryMappingTests.swift */,
+			);
+			path = StockObserverTests;
+			sourceTree = "<group>";
+		};
+		7F3BAA092FC3562A0012DA5A /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				7F3BAA0B2FC356490012DA5A /* MockMarketService.swift */,
+				7F3BAA0D2FC356620012DA5A /* MockAPIClient.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		7F3BAA0A2FC356320012DA5A /* TestData */ = {
+			isa = PBXGroup;
+			children = (
+				7F3BAA0F2FC356890012DA5A /* TestDataFactory.swift */,
+			);
+			path = TestData;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -353,38 +367,12 @@
 			dependencies = (
 				7F3BA97E2FC218C50012DA5A /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				7F3BA97F2FC218C50012DA5A /* StockObserverTests */,
-			);
 			name = StockObserverTests;
 			packageProductDependencies = (
 			);
 			productName = StockObserverTests;
 			productReference = 7F3BA97C2FC218C50012DA5A /* StockObserverTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		7F3BA9852FC218C50012DA5A /* StockObserverUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7F3BA9962FC218C50012DA5A /* Build configuration list for PBXNativeTarget "StockObserverUITests" */;
-			buildPhases = (
-				7F3BA9822FC218C50012DA5A /* Sources */,
-				7F3BA9832FC218C50012DA5A /* Frameworks */,
-				7F3BA9842FC218C50012DA5A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7F3BA9882FC218C50012DA5A /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				7F3BA9892FC218C50012DA5A /* StockObserverUITests */,
-			);
-			name = StockObserverUITests;
-			packageProductDependencies = (
-			);
-			productName = StockObserverUITests;
-			productReference = 7F3BA9862FC218C50012DA5A /* StockObserverUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -400,10 +388,6 @@
 						CreatedOnToolsVersion = 26.5;
 					};
 					7F3BA97B2FC218C50012DA5A = {
-						CreatedOnToolsVersion = 26.5;
-						TestTargetID = 7F3BA96E2FC218C40012DA5A;
-					};
-					7F3BA9852FC218C50012DA5A = {
 						CreatedOnToolsVersion = 26.5;
 						TestTargetID = 7F3BA96E2FC218C40012DA5A;
 					};
@@ -425,7 +409,6 @@
 			targets = (
 				7F3BA96E2FC218C40012DA5A /* StockObserver */,
 				7F3BA97B2FC218C50012DA5A /* StockObserverTests */,
-				7F3BA9852FC218C50012DA5A /* StockObserverUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -442,13 +425,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7F3BA97A2FC218C50012DA5A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7F3BA9842FC218C50012DA5A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -499,13 +475,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7F3BA9822FC218C50012DA5A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				7F3BAA0C2FC356490012DA5A /* MockMarketService.swift in Sources */,
+				7F3BAA162FC356C70012DA5A /* YahooFinanceMarketServiceTests.swift in Sources */,
+				7F3BAA102FC356890012DA5A /* TestDataFactory.swift in Sources */,
+				7F3BAA142FC356BC0012DA5A /* StockDetailViewModelTests.swift in Sources */,
+				7F3BAA0E2FC356620012DA5A /* MockAPIClient.swift in Sources */,
+				7F3BAA122FC356A70012DA5A /* MarketListViewModelTests.swift in Sources */,
+				7F3BAA182FC356D20012DA5A /* MarketSummaryMappingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,11 +492,6 @@
 			isa = PBXTargetDependency;
 			target = 7F3BA96E2FC218C40012DA5A /* StockObserver */;
 			targetProxy = 7F3BA97D2FC218C50012DA5A /* PBXContainerItemProxy */;
-		};
-		7F3BA9882FC218C50012DA5A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7F3BA96E2FC218C40012DA5A /* StockObserver */;
-			targetProxy = 7F3BA9872FC218C50012DA5A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -720,6 +691,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DUAGBNFR22;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
 				MARKETING_VERSION = 1.0;
@@ -741,6 +713,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DUAGBNFR22;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
 				MARKETING_VERSION = 1.0;
@@ -753,44 +726,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StockObserver.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StockObserver";
-			};
-			name = Release;
-		};
-		7F3BA9972FC218C50012DA5A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yevdokymovoleksandr.StockObserverUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = StockObserver;
-			};
-			name = Debug;
-		};
-		7F3BA9982FC218C50012DA5A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yevdokymovoleksandr.StockObserverUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = StockObserver;
 			};
 			name = Release;
 		};
@@ -820,15 +755,6 @@
 			buildConfigurations = (
 				7F3BA9942FC218C50012DA5A /* Debug */,
 				7F3BA9952FC218C50012DA5A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7F3BA9962FC218C50012DA5A /* Build configuration list for PBXNativeTarget "StockObserverUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7F3BA9972FC218C50012DA5A /* Debug */,
-				7F3BA9982FC218C50012DA5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
