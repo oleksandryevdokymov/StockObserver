@@ -37,7 +37,7 @@ The current specification using:
 - `market/v2/get-summary` for the list screen
 - `stock/v2/get-summary` for the detail screen
 
-At the time of development, `stock/v2/get-summary` is marked as deprecated on RapidAPI and returns `204 No Content` for tested symbols such as `AMRN`, `AAPL`, `MSFT`, `TSLA`, `NVDA`, `AMZN`, `GOOGL`, and `META`.
+At the time of development, `stock/v2/get-summary` is marked as deprecated on RapidAPI and returns `204 No Content` for tested symbols such as `AMRN`, `GC=F`, `^GSPC`, `AAPL`, `MSFT`, `TSLA`, `NVDA`, `AMZN`, `GOOGL`, and `META`.
 
 The app still calls the required endpoint. If the response is empty, the detail screen gracefully falls back to displaying additional data already available from the `market/v2/get-summary` response.
 
