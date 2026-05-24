@@ -23,9 +23,10 @@ For security reasons, the real API key is not committed.
 
 Setup:
 
-1. Copy `StockObserver/Configs/Secrets.example.xcconfig`
-2. Rename the copy to `Secrets.xcconfig` (remove next line: `#include? "Secrets.xcconfig"`) 
-3. Replace `PUT_YOUR_RAPIDAPI_KEY_HERE` with your RapidAPI key
+1. Duplicate `StockObserver/Configs/Secrets.example.xcconfig`
+2. Rename the duplicate to `Secrets.xcconfig`
+3. In `Secrets.xcconfig`, replace `PUT_YOUR_RAPIDAPI_KEY_HERE`
+4. Remove `#include? "Secrets.xcconfig"` from the local `Secrets.xcconfig` copy only
 
 `Secrets.xcconfig` is ignored by git.
 
