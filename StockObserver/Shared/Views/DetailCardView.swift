@@ -1,0 +1,26 @@
+//
+//  DetailCardView.swift
+//  StockObserver
+//
+//  Created by Oleksandr Yevdokymov on 23.05.2026.
+//
+
+import SwiftUI
+
+struct DetailCardView<Content: View>: View {
+    let title: String
+    @ViewBuilder let content: Content
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            Text(title)
+                .font(.headline)
+
+            content
+        }
+        .padding()
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(.regularMaterial)
+        .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+    }
+}

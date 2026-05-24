@@ -1,0 +1,52 @@
+# macOS
+.DS_Store
+
+# Xcode user-specific files
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+
+# Build products
+build/
+DerivedData/
+
+# Swift / Objective-C generated files
+*.hmap
+
+# App packaging
+*.ipa
+*.dSYM
+*.dSYM.zip
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+.build/
+
+# Keep Package.resolved for iOS apps to pin dependency versions
+# Uncomment only for reusable libraries if you intentionally do not want it tracked:
+# Package.resolved
+
+# CocoaPods
+Pods/
+# Keep these tracked:
+# Podfile
+# Podfile.lock
+
+# Carthage
+Carthage/Build/
+
+# fastlane generated output
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output/
+
+# Environment / secrets
+.env
+*.xcconfig.local
+
+# Secrets
+**/Secrets.xcconfig
